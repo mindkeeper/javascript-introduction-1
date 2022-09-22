@@ -1,6 +1,6 @@
 const printTriangle = (num) => {
   if (typeof num !== "number" || num <= 0) {
-    return "input Invalid";
+    return "Data Harus Number";
   } else {
     let string = "";
 
@@ -14,5 +14,3 @@ const printTriangle = (num) => {
     return string;
   }
 };
-
-console.log(printTriangle(5));
