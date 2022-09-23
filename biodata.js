@@ -19,5 +19,7 @@ const biodata = {
     { skillName: "kotlin", level: "Beginner" },
     { skillName: "Android Studio", level: "Beginner" },
   ],
-  interestedInCoding: true,
+  interestInCoding: true,
 };
+
+console.log(biodata);

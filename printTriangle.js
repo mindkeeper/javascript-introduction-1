@@ -1,16 +1,21 @@
 const printTriangle = (num) => {
-  if (typeof num !== "number" || num <= 0) {
+  if (typeof num !== "number") {
     return "Data Harus Number";
+  } else if (num <= 0) {
+    return "Input harus lebih besar dari 0";
   } else {
-    let string = "";
+    let result = "";
 
     for (let i = num; i > 0; i--) {
       for (let j = 1; j <= i; j++) {
-        string += j;
+        result += j;
       }
-      string += "\n";
+      result += "\n";
     }
 
-    return string;
+    return result;
   }
 };
+console.log(printTriangle(5));
+console.log(printTriangle("5"));
+console.log(printTriangle(-1));
